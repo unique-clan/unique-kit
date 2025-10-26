@@ -1,0 +1,7 @@
+[Service]
+WorkingDirectory=%h/unique-kit
+ExecStart=%h/unique-kit/DDNet-Server "sv_port %i; sv_input_fifo fifos/%i"
+Restart=on-success
+
+[Install]
+WantedBy=default.target

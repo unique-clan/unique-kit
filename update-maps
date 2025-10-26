@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -e
+
+cd ~/unique-maps
+
+if git pull | grep -q "Already up to date"; then
+  exit
+fi
+
+shopt -s nullglob
+echo "clear_votes; exec votes.cfg" | tee ~/unique-kit/fifos/*
