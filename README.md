@@ -31,7 +31,7 @@ Compile the game server:
 ./unique-kit/update-game
 ```
 
-Create `autoexec_local.cfg` for your location:
+Create `unique-kit/autoexec_local.cfg` for your location:
 
 ```
 sv_name Unique Race GER
@@ -42,7 +42,7 @@ add_sqlserver r urace record uger password 5.75.153.72 44936 0
 add_sqlserver w urace record uger password 5.75.153.72 44936 0
 ```
 
-Start and enable the user units:
+Start and enable user units:
 
 ```
 systemctl --user link unique-kit/update-maps.service
