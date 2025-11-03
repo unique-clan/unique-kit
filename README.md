@@ -16,7 +16,7 @@ Add our SSH public keys to the user's `.ssh/authorized_keys` and make sure the f
 
 The rest of this guide does not require root and can either be performed by the server owner or by us.
 
-Clone the following repositories into the user's home directory (ask us for an access token):
+Clone the following repositories into the user's home directory:
 
 ```
 git clone https://github.com/unique-clan/unique-kit.git
@@ -31,7 +31,7 @@ Compile the game server:
 ./unique-kit/update-game
 ```
 
-Create `autoexec_local.cfg` for your location (ask us for database credentials):
+Create `autoexec_local.cfg` for your location:
 
 ```
 sv_name Unique Race GER
@@ -42,7 +42,7 @@ add_sqlserver r urace record uger password 5.75.153.72 44936 0
 add_sqlserver w urace record uger password 5.75.153.72 44936 0
 ```
 
-Start and enable the user units (you can choose the port range freely):
+Start and enable the user units:
 
 ```
 systemctl --user link unique-kit/update-maps.service
