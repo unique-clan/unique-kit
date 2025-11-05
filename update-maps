@@ -9,4 +9,4 @@ if git pull | grep -q "Already up to date"; then
 fi
 
 shopt -s nullglob
-echo "clear_votes; exec votes.cfg" | tee ~/unique-kit/fifos/*
+echo "clear_votes; exec votes_short.cfg" | tee ~/unique-kit/fifos/*
