@@ -8,3 +8,5 @@ git reset --hard origin/unique-race
 cmake -Bbuild -GNinja -DCLIENT=OFF -DMYSQL=ON
 cmake --build build -- DDNet-Server
 mv build/DDNet-Server ~/unique-kit
+
+~/unique-kit/restart-when-empty
