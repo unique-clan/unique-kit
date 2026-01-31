@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 shopt -s nullglob
 echo "sv_shutdown_when_empty 1" | tee ~/unique-kit/fifos/*
